@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output
+.next/
+out/
+
+# Debug
+npm-debug.log*
+
+# Environment
+.env*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Original unoptimized images (not needed in repo)
+public/assets/images_original/
+
+# Large video files (tracked via Git LFS)
+*.mp4

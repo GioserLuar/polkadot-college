@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   POLKADOT COLLEGE — Design System
+   Colors: #1F294E (primary), #4C99D4 (accent), #FFFFFF (text)
+   Typography: Inter (display + body), Caveat (handwritten)
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme {
+  --color-primary: #1F294E;
+  --color-primary-light: #2a3a6a;
+  --color-accent: #4C99D4;
+  --color-accent-light: #6bb3e8;
+  --color-dark: #0a0a0b;
+  --color-surface: #111114;
+  --color-overlay: rgba(31, 41, 78, 0.5);
+  --color-overlay-heavy: rgba(31, 41, 78, 0.7);
+
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-handwritten: "Caveat", cursive;
+}
+
+/* ─── Reset & Base ─── */
+html {
+  scroll-behavior: auto; /* Lenis handles smooth scroll */
+}
+
+body {
+  background: #ffffff;
+  color: #1F294E;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Lenis smooth scroll ─── */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ─── Typography Scale ─── */
+.text-display-xl {
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.text-display-lg {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.text-display-md {
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text-heading {
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.text-body-lg {
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* ─── Curtain reveal animation ─── */
+.curtain-panel {
+  will-change: transform;
+}
+
+/* ─── Overlay utility ─── */
+.overlay-primary {
+  background: rgba(31, 41, 78, 0.5);
+}
+
+.overlay-primary-heavy {
+  background: rgba(31, 41, 78, 0.7);
+}
+
+/* ─── Section padding ─── */
+.section-padding {
+  padding: clamp(80px, 12vh, 160px) clamp(20px, 5vw, 80px);
+}
+
+/* ─── Smooth image transitions ─── */
+.img-reveal {
+  will-change: clip-path;
+}
+
+/* ─── Focus styles for accessibility ─── */
+:focus-visible {
+  outline: 2px solid #4C99D4;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: rgba(76, 153, 212, 0.3);
+  color: #1F294E;
+}
