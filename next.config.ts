@@ -2,16 +2,22 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /**
-   * Static HTML export for Hostinger shared hosting.
-   * Generates a fully static site in /out directory.
+   * Static HTML export — generates /out directory.
    * No Node.js server required — pure HTML/CSS/JS.
    */
   output: 'export',
 
   /**
-   * Disable Next/Image optimization since Hostinger
-   * doesn't run a Node.js server for on-the-fly processing.
-   * Our images are already optimized as WebP via sharp.
+   * GitHub Pages serves from /polkadot-college/ subdirectory.
+   * basePath prefixes all routes, assetPrefix prefixes all static assets.
+   * Remove both when deploying to a custom domain (polkadotcollege.com).
+   */
+  basePath: '/polkadot-college',
+  assetPrefix: '/polkadot-college/',
+
+  /**
+   * Disable Next/Image optimization — no Node.js server
+   * for on-the-fly processing. Images already optimized as WebP.
    */
   images: {
     unoptimized: true,
