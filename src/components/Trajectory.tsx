@@ -122,9 +122,25 @@ export function Trajectory() {
           <h2 className="text-display-md text-white mb-4">
             Nuestra Trayectoria
           </h2>
-          <p className="text-body-lg text-white/70 font-bold">
-            De Polkadot Blockchain Academy a Polkadot College.
-          </p>
+          <div className="flex items-center justify-center gap-3 flex-wrap">
+            <span className="text-body-lg text-white/70 font-bold">De</span>
+            <span className="inline-flex items-center bg-white/10 border border-white/20 rounded-full px-5 py-2">
+              <img
+                src="/assets/images/PBA_Logo_white.png"
+                alt="Polkadot Blockchain Academy"
+                className="h-6 sm:h-7 w-auto object-contain"
+              />
+            </span>
+            <span className="text-body-lg text-white/70 font-bold">a</span>
+            <span className="inline-flex items-center gap-2 bg-[#4C99D4]/20 border border-[#4C99D4]/40 rounded-full px-4 py-1.5">
+              <img
+                src="/assets/images/Polkadot_Icon_Black.png"
+                alt="Polkadot College"
+                className="w-5 h-5 brightness-0 invert"
+              />
+              <span className="text-[#4C99D4] font-bold text-sm tracking-tight">Polkadot College</span>
+            </span>
+          </div>
         </div>
 
         {/* Odometer counters */}

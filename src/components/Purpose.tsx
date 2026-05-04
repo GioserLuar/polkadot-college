@@ -101,7 +101,7 @@ export function Purpose() {
               textShadow: "0 4px 30px rgba(0,0,0,0.5), 0 0 60px rgba(31,41,78,0.3)",
             }}
           >
-            Hub de Educación Web3
+            Institución Global<br />de Educación Web3
           </h2>
         </div>
 

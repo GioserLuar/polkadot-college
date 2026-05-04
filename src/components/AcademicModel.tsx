@@ -77,7 +77,7 @@ export function AcademicModel() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('/assets/images/PBA_HK_Graduation extended.webp'), linear-gradient(135deg, #1a2040 0%, #0d1425 100%)",
+            "url('/assets/images/Modelo_Academico_Polkadot_College.png?v=2'), linear-gradient(135deg, #1a2040 0%, #0d1425 100%)",
         }}
       />
 
